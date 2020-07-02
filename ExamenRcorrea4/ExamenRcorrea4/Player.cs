@@ -11,8 +11,9 @@ namespace ExamenRcorrea4
         private int number;
         private bool goalkeeper;
         private int healthPoints;
+        private string nationality;
 
-        public Player(string completeName,string id,int age,int attackPoints, int defensePoints, int number, bool goalkeeper, int healthPoints) : base(completeName, id, age)
+        public Player(string completeName,string id,int age,int attackPoints, int defensePoints, int number, bool goalkeeper, int healthPoints, string nationality) : base(completeName, id, age)
         {
             this.completeName = completeName;
             this.id = id;
@@ -22,6 +23,7 @@ namespace ExamenRcorrea4
             this.Number = number;
             this.Goalkeeper = goalkeeper;
             this.healthPoints = healthPoints;
+            this.Nationality = nationality;
 
         }
 
@@ -30,5 +32,6 @@ namespace ExamenRcorrea4
         public int Number { get => number; set => number = value; }
         public bool Goalkeeper { get => goalkeeper; set => goalkeeper = value; }
         public int HealthPoints { get => healthPoints; set => healthPoints = value; }
+        public string Nationality { get => nationality; set => nationality = value; }
     }
 }
