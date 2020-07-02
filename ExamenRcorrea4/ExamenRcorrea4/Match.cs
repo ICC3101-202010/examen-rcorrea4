@@ -38,5 +38,9 @@ namespace ExamenRcorrea4
         {
             Console.WriteLine("Match simulation");
         }
+        public static void OnInjuredMessage(object source,EventArgs e) 
+        {
+            Console.WriteLine("A player is injured");
+        }
     }
 }

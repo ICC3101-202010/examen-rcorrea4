@@ -65,9 +65,26 @@ namespace ExamenRcorrea4
             return false;
         }
 
-        public static void OnInjured(object source,EventArgs e)
+        
+        public delegate void InjuredMessageEventHandler(object source, EventArgs eventArgs);
+        public event InjuredMessageEventHandler InjuredMesagge;
+        public virtual void OnInjuredMesagge()
+        {
+            if (InjuredMesagge != null)
+            {
+                InjuredMesagge(this, EventArgs.Empty);
+            }
+        }
+        public static void OnInjured(object source, EventArgs e)
         {
             Console.WriteLine("A Player had been injured");
+            
+        }
+        public void InjuredPLayer()
+        {
+            OnInjuredMesagge();
+            Console.WriteLine("A PLayer had been injured");
+            InjuredMesagge += Match.OnInjuredMessage;
         }
     }
 }

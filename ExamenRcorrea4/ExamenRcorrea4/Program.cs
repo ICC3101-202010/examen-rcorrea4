@@ -11,7 +11,7 @@ namespace ExamenRcorrea4
             Player[] playing = new Player[12];
             while (cont < 15)
             {
-                Player player = new Player("a", "v", 12,12,12,12,false,100,"chilean");
+                Player player = new Player("a", "v", 12,12,12,12,false,100,"chile");
 
                 players[cont] = player;
                 if (cont < 12)
@@ -27,6 +27,7 @@ namespace ExamenRcorrea4
             Team team = new Team("a", true, players, playing, coach, doctor, "chile");
 
             team.info();
+            Console.WriteLine(team.verifyPlayerNations() ); 
         }
     }
 }
