@@ -18,13 +18,25 @@ namespace ExamenRcorrea4
         internal Team LocalTeam { get => localTeam; set => localTeam = value; }
         internal Team VisitorTeam { get => visitorTeam; set => visitorTeam = value; }
 
-        public Match(bool national, int minutes, string result, Team localTeam, Team visitorTeam)
-        {
-            this.national = national;
+        public Match( int minutes, string result, Team localTeam, Team visitorTeam)
+        { 
+            if (localTeam.Nation == visitorTeam.Nation)
+            {
+                this.national = true;
+            }
+            else
+            {
+                this.national = false;
+            }
+            
             this.minutes = minutes;
             this.result = result;
             this.localTeam = localTeam;
             this.visitorTeam = visitorTeam;
+        }
+        public void MatchSimulation()
+        {
+            Console.WriteLine("Match simulation");
         }
     }
 }

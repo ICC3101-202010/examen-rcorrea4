@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace ExamenRcorrea4
 {
@@ -33,5 +34,23 @@ namespace ExamenRcorrea4
         public bool Goalkeeper { get => goalkeeper; set => goalkeeper = value; }
         public int HealthPoints { get => healthPoints; set => healthPoints = value; }
         public string Nationality { get => nationality; set => nationality = value; }
+
+        public delegate void InjuredEventHandler(object source, EventArgs args);
+        public event InjuredEventHandler Injured;
+        public virtual void OnInjured()
+        {
+            if (Injured != null)
+            {
+                Injured(this, EventArgs.Empty);
+            }
+        }
+        public void InjuredPlayer()
+        {
+            Console.WriteLine("The player "+completeName+" has injured");
+            Thread.Sleep(2000);
+            OnInjured();
+            Injured += Coach.OnInjured;
+            
+        }
     }
 }

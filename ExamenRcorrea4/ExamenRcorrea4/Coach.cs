@@ -14,13 +14,13 @@ namespace ExamenRcorrea4
         public int TacticPoints { get => tacticPoints; set => tacticPoints = value; }
         internal Team CurrentTeam { get => currentTeam; set => currentTeam = value; }
 
-        public Coach(string completeName, string id, int age, int tacticPoints, Team currentTeam) : base(completeName, id, age)
+        public Coach(string completeName, string id, int age, int tacticPoints) : base(completeName, id, age)
         {
             this.completeName = completeName;
             this.id = id;
             this.age = age;
             this.TacticPoints = tacticPoints;
-            this.currentTeam = currentTeam;
+            
         }
 
         public bool changePlayer(Player playing,Player change)
@@ -63,6 +63,11 @@ namespace ExamenRcorrea4
                 }
             }
             return false;
+        }
+
+        public static void OnInjured(object source,EventArgs e)
+        {
+            Console.WriteLine("A Player had been injured");
         }
     }
 }

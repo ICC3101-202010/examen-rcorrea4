@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ExamenRcorrea4/1.0.0": {
+        "runtime": {
+          "ExamenRcorrea4.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ExamenRcorrea4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

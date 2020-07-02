@@ -1,0 +1,13 @@
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\bin\Debug\netcoreapp3.1\ExamenRcorrea4.exe
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\bin\Debug\netcoreapp3.1\ExamenRcorrea4.deps.json
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\bin\Debug\netcoreapp3.1\ExamenRcorrea4.runtimeconfig.json
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\bin\Debug\netcoreapp3.1\ExamenRcorrea4.runtimeconfig.dev.json
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\bin\Debug\netcoreapp3.1\ExamenRcorrea4.dll
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\bin\Debug\netcoreapp3.1\ExamenRcorrea4.pdb
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\obj\Debug\netcoreapp3.1\ExamenRcorrea4.csprojAssemblyReference.cache
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\obj\Debug\netcoreapp3.1\ExamenRcorrea4.csproj.CoreCompileInputs.cache
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\obj\Debug\netcoreapp3.1\ExamenRcorrea4.AssemblyInfoInputs.cache
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\obj\Debug\netcoreapp3.1\ExamenRcorrea4.AssemblyInfo.cs
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\obj\Debug\netcoreapp3.1\ExamenRcorrea4.dll
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\obj\Debug\netcoreapp3.1\ExamenRcorrea4.pdb
+C:\Users\corre\OneDrive\Escritorio\examen-rcorrea4\ExamenRcorrea4\ExamenRcorrea4\obj\Debug\netcoreapp3.1\ExamenRcorrea4.genruntimeconfig.cache

@@ -24,6 +24,7 @@ namespace ExamenRcorrea4
             if (player.HealthPoints < 50)
             {
                 evaluation = "Injured";
+
             }
         }
         public void Heal(Player player)

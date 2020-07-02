@@ -12,6 +12,7 @@ namespace ExamenRcorrea4
         private Coach coach;
         private Doctor doctor;
         private bool national;
+        private string nation;
         //national==true--> national
         //naional==false-->liga
 
@@ -21,8 +22,9 @@ namespace ExamenRcorrea4
         internal Player[] Playing { get => playing; set => playing = value; }
         internal Coach Coach { get => coach; set => coach = value; }
         internal Doctor Doctor { get => doctor; set => doctor = value; }
+        public string Nation { get => nation; set => nation = value; }
 
-        public Team(string teamName,bool national, Player[] players, Player[] playingPlayers,Coach coach, Doctor doctor)
+        public Team(string teamName,bool national, Player[] players, Player[] playingPlayers,Coach coach, Doctor doctor, string nation)
         {
             this.teamName = teamName;
             this.national = national;
@@ -30,38 +32,44 @@ namespace ExamenRcorrea4
             this.playing = playingPlayers;
             this.coach = coach;
             this.doctor = doctor;
+            this.nation = nation;
         }
 
-        //nationalsPlayers() verifica si el equipo es nacional y luego si todos los jugadores son de la misma nacionalidad al primero
-        //si no se cumple una de estas retorna false, si se cumplen ambas retorna true
-        public bool nationalPlayers()
+        
+        public void info()
         {
-            if (this.national == true)
+            Console.WriteLine("Team name: "+ teamName);
+            if (national == true)
             {
-                string  nationality="";
-                string fisrtPlayerNationality = "";
-                int cont = 0;
-                foreach (Player p in players)
-                {
-                    nationality = p.Nationality;
-                    if (cont == 0)
-                    {
-                        fisrtPlayerNationality = p.Nationality;
-                    }
-                    if (nationality != fisrtPlayerNationality)
-                    {
-                        return false;
-                    }
-                    cont += 1;
-                    
-                }
-                return true;
+                Console.WriteLine("Type: National");
             }
             else
             {
-                return false;
+                Console.WriteLine(" Type: Ligue");
             }
-            
+            Console.WriteLine("Players: ");
+            foreach (Player p in players)
+            {
+                Console.WriteLine(p.completeName + p.Number);
+            }
+            Console.WriteLine("Coach: "+ coach.completeName);
+            Console.WriteLine("Doctor: "+ doctor.completeName);
         }
+        public bool verifyPlayerNations()//verifica si todos los jugadores son de la misma nacionalidad que el equipo
+        {
+            
+            bool result = true;
+            foreach (Player p in players)
+            {
+                
+                if (p.Nationality != nation)
+                {
+                    result = false;
+                }
+                
+            }
+            return result;
+        }
+        
     }
 }
