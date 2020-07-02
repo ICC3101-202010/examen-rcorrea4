@@ -19,11 +19,19 @@ namespace ExamenRcorrea4
         }
         public void Evaluate(Player player)
         {
-
+            //Players with less than 50 point of health are consider injured
+            string evaluation = "";
+            if (player.HealthPoints < 50)
+            {
+                evaluation = "Injured";
+            }
         }
         public void Heal(Player player)
         {
-
+            if (player.HealthPoints < 100)
+            {
+                player.HealthPoints = 100;
+            }
         }
     }
 }
